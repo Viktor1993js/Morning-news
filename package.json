@@ -1,0 +1,15 @@
+{
+  "name": "morning-news",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "sass/style.scss css/style.css"
+  },
+  "author": "Viktor",
+  "license": "ISC",
+  "dependencies": {
+    "compile": "0.0.2"
+  }
+}
