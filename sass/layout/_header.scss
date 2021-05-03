@@ -1,0 +1,30 @@
+.header {
+    height: 89vh;
+    background-image: linear-gradient(to right bottom, rgba($color-primary-dark, 0.3), rgba($color-primary, 0.3)), url(..//img/Depositphotos_56388493_m-2015.jpg);
+    position: relative;
+    background-size: cover;
+    border-radius: 3px;
+    background-position: top;
+    
+    &__logo-box {
+        position: absolute;
+        top: 1rem;
+        left: 2rem;
+    
+    }
+
+    .header__text-box {
+        position: absolute;
+        left: 0;
+        text-align: center;
+    }
+    
+    &__logo {
+        height: 10rem;
+    }
+    
+    &__text-box {
+        position: absolute;
+        top: 15rem;
+    }
+}

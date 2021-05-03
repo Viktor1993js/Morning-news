@@ -5,11 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile:sass": "sass/style.scss css/style.css"
+    "compile:sass": "node-sass sass/style.scss css/style.css -w"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Viktor1993js/Morning-news.git"
   },
   "author": "Viktor",
   "license": "ISC",
-  "dependencies": {
-    "compile": "0.0.2"
-  }
+  "bugs": {
+    "url": "https://github.com/Viktor1993js/Morning-news/issues"
+  },
+  "homepage": "https://github.com/Viktor1993js/Morning-news#readme"
 }
