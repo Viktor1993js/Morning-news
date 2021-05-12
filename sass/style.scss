@@ -2,9 +2,13 @@
 @import "abstracts/variables";
 
 @import "base/base";
+
+@import "components/bg-video";
+
 @import "base/typography";
 @import "base/utilities";
 
+@import "layout/footer";
 @import "layout/header";
 
 @import "pages/home";
