@@ -21,6 +21,10 @@
     
     &__logo {
         height: 10rem;
+
+        @include respond (phone) {
+            height: 8rem;
+        }
     }
     
     &__text-box {
