@@ -24,6 +24,15 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box;
@@ -112,12 +121,35 @@ body {
   padding-top: 4rem !important; }
 
 .footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-color: black;
-  width: 100%;
-  height: 20rem; }
+  height: 50vh;
+  flex-wrap: wrap;
+  overflow: hidden; }
+  .footer__contacts {
+    width: 50%;
+    display: block; }
+  .footer__contacts-list {
+    font-size: 1.9rem;
+    list-style: none;
+    color: #fff; }
+  .footer__link:link, .footer__link:visited {
+    text-decoration: none;
+    color: #fff; }
+  .footer__link:hover {
+    color: red;
+    transition: all .5s; }
+  .footer__map {
+    border: 2px solid #fff; }
+    .footer__map:hover {
+      transition: all .5s;
+      border: 2px solid red;
+      border-radius: 5px; }
 
 .header {
-  height: 89vh;
+  height: 93vh;
   position: relative;
   background-size: cover;
   border-radius: 3px;
@@ -176,7 +208,7 @@ body {
 
 .section-stories {
   background-color: #f7f7f7; }
-  .section-stories__photo-box {
+  .section-stories__box {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -188,9 +220,11 @@ body {
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     overflow: hidden; }
   .section-stories__img-text {
+    display: block;
     font-size: 1.7rem;
     letter-spacing: .1rem;
-    padding-bottom: 2rem; }
+    padding-bottom: 2rem;
+    text-align: center; }
 
 .section-our-time {
   width: 100%; }

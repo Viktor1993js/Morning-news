@@ -60,11 +60,15 @@
     background-color: $color-grey-light-1;
 
 
-    &__photo-box {
+    &__box {
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
         padding: 4rem 0;
+    }
+
+    &__photo-box {
+        
     }
 
     &__img {
@@ -76,14 +80,17 @@
     }
 
     &__img-text {
+        display: block;
         font-size: 1.7rem;
         letter-spacing: .1rem;
         padding-bottom: 2rem;
+        text-align: center;
     }
 }
 
 .section-our-time {
     width: 100%;
+
     &__photo-box {
         display: flex;
         flex-wrap: wrap;

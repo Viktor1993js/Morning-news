@@ -1,5 +1,44 @@
 .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: black;
-    width: 100%;
-    height: 20rem;
+    height: 50vh;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    &__contacts {
+        width: 50%;
+        display: block;
+    }
+
+    &__contacts-list {
+        font-size: 1.9rem;
+        list-style: none;
+        color: $color-white;
+    }
+    
+    &__link {
+        
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color: $color-white;
+        }
+
+        &:hover {
+            color: red;
+            transition: all .5s;
+        }
+    }
+
+
+    &__map {
+        border: 2px solid $color-white;
+        &:hover {
+            transition: all .5s;
+            border: 2px solid red;
+            border-radius: 5px;
+        }
+    }
 }
