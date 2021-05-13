@@ -80,7 +80,8 @@ body {
     letter-spacing: .2rem;
     font-weight: 400;
     background-color: rgba(255, 255, 255, 0.6);
-    border: 4px solid #fff; }
+    border: 4px solid #fff;
+    overflow: hidden; }
 
 .heading-secondary {
   font-size: 2rem;
